@@ -1,0 +1,19 @@
+n=int(input())
+myset1=set()
+a1=input()
+lis1=a1.split()
+newlis1=list(map(int,lis1))
+myset1.update(newlis1)
+
+m=int(input())
+myset2=set()
+a2=input()
+lis2=a2.split()
+newlis2=list(map(int,lis2))
+myset2.update(newlis2)
+
+
+d=(myset1.difference(myset2)).union((myset2.difference(myset1)))
+for i in sorted(list(d)):
+    print(i)
+
