@@ -1,0 +1,11 @@
+from collections import OrderedDict
+ordered_dictionary = OrderedDict()
+n=int(input())
+for i in range(n):
+    name,space,price=input().rpartition(' ')
+    if name not in ordered_dictionary:
+        ordered_dictionary[name]=int(price)
+    else:
+        ordered_dictionary[name]=ordered_dictionary[name]+int(price)
+for K,V in ordered_dictionary.items():
+        print(K,V)
