@@ -1,0 +1,10 @@
+
+n=int(input())
+
+for i in range(n):
+    p1=int(input())
+    A=set(map(int,input().split()))
+    p2=int(input())
+    B=set(map(int,input().split()))
+
+    print(A.issubset(B))
