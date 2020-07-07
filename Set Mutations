@@ -1,0 +1,17 @@
+n=int(input())
+H=set(map(int,input().split()))
+m=int(input())
+for i in range(m):
+    p=list(input().split())
+    myset=set(map(int,input().split()))
+    if p[0]=='intersection_update':
+        H.intersection_update(myset)
+    elif p[0]=='update':
+        H.update(myset)
+    elif p[0]=='symmetric_difference_update':
+        H.symmetric_difference_update(myset)
+    else:
+        H.difference_update(myset)
+
+print(sum(list(H)))
+        
