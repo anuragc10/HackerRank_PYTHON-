@@ -1,0 +1,14 @@
+A = set(map(int,input().split()))
+n = int(input())
+
+p = True
+
+for i in range(n):
+    B = set(map(int,input().split()))
+    if not B.issubset(A):
+        p = False
+    if len(B) >= len(A):
+        p = False
+
+print(p)    
+    
