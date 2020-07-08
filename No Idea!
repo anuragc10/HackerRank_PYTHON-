@@ -1,0 +1,12 @@
+n,m=map(int,input().split())
+A=list(map(int,input().strip().split()))
+B=set(map(int,input().strip().split()))
+C=set(map(int,input().strip().split()))
+happy=0
+for i in A:
+    if i in B:
+        happy=happy+1
+    elif i in C:
+        happy=happy-1
+
+print(happy)
