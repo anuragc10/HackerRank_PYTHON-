@@ -1,0 +1,7 @@
+import math
+from math import acos, degrees
+a=int(input())
+b=int(input())
+c=math.sqrt(a**2+b**2)
+angle=degrees(acos(b/c))
+print(str(int(round(angle)))+'°')
