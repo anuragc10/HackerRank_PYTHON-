@@ -1,0 +1,15 @@
+from itertools import combinations 
+
+N = int(input())
+S = input().split(' ')
+K = int(input())
+
+num = 0
+oc = 0
+
+for i in combinations(S,K):
+    oc+=1
+    num+='a' in i
+    
+print (float(num)/oc)
+
