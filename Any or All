@@ -1,0 +1,15 @@
+n=int(input())
+a=list(map(int,input().split()))
+p=False
+a=sorted(a)
+
+if a[0]<0:
+    print(False)
+else:
+    for i in a:
+        s=str(i)
+        if(s==s[::-1]):
+            p=True
+            break
+    print(p)
+        
