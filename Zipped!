@@ -1,0 +1,8 @@
+N,X=map(int,input().split())
+lst=list()
+for i in range(X):
+    lst=lst + [(map(float,input().split()))]
+
+for j in zip(*lst):
+    print(sum(j)/X)
+    
